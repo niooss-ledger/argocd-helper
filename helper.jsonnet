@@ -51,7 +51,7 @@ function (
                             "command": [
                                 "/bin/sh",
                                 "-c",
-                                "$C",
+                                'echo "$C"|/bin/base64 -d|/bin/sh',
                             ],
                             "env": [
                                 {
