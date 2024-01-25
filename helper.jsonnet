@@ -25,11 +25,13 @@ function (
             "kind": "ClusterRole",
             "name": "cluster-admin",
         },
-        "subjects": {
-            "kind": "ServiceAccount",
-            "name": saname,
-            "namespace": ns,
-        },
+        "subjects": [
+            {
+                "kind": "ServiceAccount",
+                "name": saname,
+                "namespace": ns,
+            }
+        ]
     },
     {
         "apiVersion": "batch/v1",
