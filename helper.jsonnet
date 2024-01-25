@@ -61,7 +61,7 @@ function (
                             ]
                         }
                     ],
-                    "restartPolicy": "never",
+                    "restartPolicy": "Never",
                 }
             }
         }
